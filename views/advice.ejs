@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="advice-generator-box">
+
+    <!-- advice number -->
+    <p>Advice #<span id="advice-id"><%= adviceID %></span></p>
+
+    <!-- advice text -->
+    <h2 class="advice-text" id="adviceText">
+      "<%= advice %>"
+    </h2>
+
+
+    <!-- advice divider -->
+    <img src="images/pattern-divider-desktop.svg" class="divider">
+
+
+    <!-- button to generate advice text -->
+    <button type="reset" class="dice" id="generateText" onClick="window.location.reload();">
+      <img src="images/icon-dice.svg">
+    </button>
+
+
+
+  </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

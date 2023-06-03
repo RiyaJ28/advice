@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+}
+div.advice-generator-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 470px;
+  height: auto;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  padding: 1em 3em;
+}
+div.advice-generator-box p {
+  text-transform: uppercase;
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+div.advice-generator-box h2.advice-text {
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  font-size: 1.4em;
+}
+div.advice-generator-box img.divider {
+  max-width: 100%;
+  margin: 20px 0;
+}
+div.advice-generator-box button.dice {
+  background-color: hsl(150, 100%, 66%);
+  padding: 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 45%;
+  transition: box-shadow 0.3s ease;
+}
+div.advice-generator-box button.dice:hover{
+  box-shadow: 0 0 10px 5px hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+div.advice-generator-box button.dice img {
+  width: 20px;
+  height: 20px;
+}
